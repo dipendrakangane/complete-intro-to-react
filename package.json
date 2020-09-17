@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "api": "node ratingsAPI.js"
+    "api": "node ratingsAPI.js",
+    "test": "standard",
+    "build": "webpack js/ClientApp.js public/bundle.js"
   },
   "dependencies": {
     "axios": "0.16.1",
@@ -22,7 +24,7 @@
     "redux": "3.6.0",
     "redux-thunk": "2.2.0",
     "styled-components": "2.0.0",
-    "webpack": "2.6.1",
+    "webpack": "^2.6.1",
     "webpack-dev-middleware": "1.10.2",
     "webpack-hot-middleware": "2.18.0"
   },
