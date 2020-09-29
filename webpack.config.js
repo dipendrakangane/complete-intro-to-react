@@ -10,13 +10,14 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.json']
     },
-    stats: {
-        color: true,
-        reasons: true,
-        chunks: false
-    },
+    stats: 'minimal',
     module: {
-        loaders: [
+        rules: [
+            {
+                test: /\.jsx?$/,
+                loader: 'eslint-loader',
+                exclude: /node_modules/
+            },
             {
                 test: /\.jsx?$/,
                 loader: 'babel-loader'

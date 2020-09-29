@@ -1,14 +1,15 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
-var MyTitle = require('./MyTitle')
+const React = require('react')
+const ReactDOM = require('react-dom')
 
-var MyFirstComponent = () => (
-  <div>
-    <MyTitle title="A"/>
-    <MyTitle title="B"/>
-    <MyTitle title="C"/>
-    <MyTitle title="D"/>
+const App = () => (
+  <div className="app">
+    <div className="home-info">
+      <h1 className="title">SVideo</h1>
+      <input type="text" placeholder="search" />
+      <button className="browse-all"> or Browse All</button>
+    </div>
   </div>
 )
 
-ReactDOM.render(<MyFirstComponent />, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
+
